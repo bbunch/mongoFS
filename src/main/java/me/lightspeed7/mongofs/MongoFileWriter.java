@@ -51,9 +51,6 @@ public class MongoFileWriter {
             }
         }
 
-        // make sure all the bytes transferred correctly
-        file.validate();
-
         // return the file object
         return store.findOne(file.getId());
     }
